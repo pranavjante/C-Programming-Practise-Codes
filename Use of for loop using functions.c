@@ -34,18 +34,18 @@ int rectangle(rcolns,rrows)
 	
 int main() 
 {
-    int nline, ncolns, nrows, rcolns, rrows;
-    printf("\nEnter no. of characters:");
-    scanf("%d", &nline);	
+    	int nline, ncolns, nrows, rcolns, rrows;
+    	printf("\nEnter no. of characters:");
+    	scanf("%d", &nline);	
+	line(ncolns, 'X');
 	printf("\nEnter no. of columns:");
 	scanf("%d", &ncolns);
+	printf("\n");
+	triangle(ncolns,nrows);
 	printf("\nEnter no. of columns in rectangle:");
 	scanf("%d",&rcolns);
 	printf("\nEnter no. of rows in rectangle:");
 	scanf("%d",&rrows);
-	line(ncolns, 'X');
-	printf("\n");
-	triangle(ncolns,nrows);
 	rectangle(rcolns,rrows);
     
     return 0;
